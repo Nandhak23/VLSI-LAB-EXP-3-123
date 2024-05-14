@@ -2,7 +2,7 @@
 ### AIM: 
  To simulate and synthesis multiplier using Vivado 2023.2.
 
-## APPARATUS REQUIRED:
+### APPARATUS REQUIRED:
 VIVADO 2023.2
   
 ### PROCEDURE:
