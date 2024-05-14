@@ -1,30 +1,24 @@
-## SIMULATION AND IMPLEMENTATION OF MULTIPLIER
-## AIM: 
- To simulate and synthesis multiplier using Xilinx ISE.
+### SIMULATION AND IMPLEMENTATION OF MULTIPLIER
+### AIM: 
+ To simulate and synthesis multiplier using Vivado 2023.2.
 
-**APPARATUS REQUIRED:**
-Xilinx 14.7
-Spartan6 FPGA
+## APPARATUS REQUIRED:
+VIVADO 2023.2
   
-**PROCEDURE:**
-STEP:1  Start  the Xilinx navigator, Select and Name the New project.
-STEP:2  Select the device family, device, package and speed.       
-STEP:3  Select new source in the New Project and select Verilog Module as the Source type.                       
-STEP:4  Type the File Name and Click Next and then finish button. Type the code and save it.
-STEP:5  Select the Behavioral Simulation in the Source Window and click the check syntax.                       
-STEP:6  Click the simulation to simulate the program and  give the inputs and verify the outputs as per the truth table.               
-STEP:7  Select the Implementation in the Sources Window and select the required file in the Processes Window.
-STEP:8  Select Check Syntax from the Synthesize  XST Process. Double Click in the  FloorplanArea/IO/Logic-Post Synthesis process in the User Constraints process group. UCF(User constraint File) is obtained. 
-STEP:9  In the Design Object List Window, enter the pin location for each pin in the Loc column Select save from the File menu.
-STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
-STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
+### PROCEDURE:
+STEP:1 Start the Vivado, Select and Name the New project.<br>
+STEP:2 Select the device family, device, package and speed. <br>
+STEP:3 Select new source in the New Project and select Verilog Module as the Source type.<br>
+STEP:4 Type the File Name and Click Next and then finish button. Type the code and save it.<br>
+STEP:5 Select the Behavioural Simulation in the Source Window and click the check syntax.<br>
+STEP:6 Click the simulation to simulate the program and give the inputs and verify the outputs as per the truth table.
 
-## 2 bit Multiplier:
-### Logic Diagram:
+### 2 BIT MULITPLIER:
+### LOGIC DIAGRAM:
 
 ![image](https://github.com/Nandhak23/VLSI-LAB-EXP-3-123/assets/160568515/465bd3b3-206c-49c1-87df-76140fcafd8c)
 
-### Verilog Code:
+### VERILOG CODE:
 ```
 module HalfAdder(a,b,sum,carry);
 input a,b;
@@ -45,14 +39,14 @@ HalfAdder h0(w1,w2,y[1],w4);
 HalfAdder h1(w3,w4,y[2],y[3]);
 endmodule
 ```
-### Output:
+### OUTPUT:
 ![image](https://github.com/Nandhak23/VLSI-LAB-EXP-3-123/assets/160568515/3faccbc6-eb9b-4231-bfdd-bfbd10c57452)
 
-## 4 Bit Multiplier:
-### Logic Diagram:
+### 4 BIT MULTIPLIER:
+### LOGIC DIAGRAM:
 ![image](https://github.com/Nandhak23/VLSI-LAB-EXP-3-123/assets/160568515/51597005-1465-4443-96e6-c531f4b1ac38)
 
-### Verilog Code:
+### VERILOG DIAGRAM:
 ```
 module  ha (a,b,s,c);
 input a,b;
@@ -90,10 +84,10 @@ fa fa8 (w[11],x[3]&y[3],w[17],z[6],z[7]);
 
 endmodule
 ```
-### Output:
+### OUTPUT:
 ![image](https://github.com/Nandhak23/VLSI-LAB-EXP-3-123/assets/160568515/7f22cd3c-65cd-4352-ba2c-606a67d33fef)
 
-## Result
-Hence the 2 bit multiplier and 4 bit multiplier are simulated and synthesised using Xilinx ISE.
+### RESULT:
+Hence the 2 bit multiplier and 4 bit multiplier are simulated and synthesised using Vivado 2023.2.
 
 
